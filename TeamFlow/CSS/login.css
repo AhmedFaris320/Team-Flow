@@ -1,0 +1,214 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.container{
+
+    display:flex;
+
+    height:100vh;
+
+}
+
+.left-panel{
+
+    flex:1;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    padding:80px;
+
+}
+
+.left-panel h1{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.left-panel h2{
+
+    margin-bottom:20px;
+
+}
+
+.left-panel p{
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+
+}
+
+.left-panel ul{
+
+    list-style:none;
+
+}
+
+.left-panel li{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+}
+
+.right-panel{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-card{
+
+    width:420px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    color:#2563EB;
+
+}
+
+.login-card p{
+
+    text-align:center;
+
+    margin:15px 0 30px;
+
+    color:#666;
+
+}
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+input:focus{
+
+    border-color:#2563EB;
+
+}
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box span{
+
+    position:absolute;
+
+    right:15px;
+
+    top:12px;
+
+    cursor:pointer;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563EB;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:#1E40AF;
+
+}
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left-panel{
+
+    display:none;
+
+}
+
+.login-card{
+
+    width:90%;
+
+}
+
+}

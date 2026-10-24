@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Users</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>TeamFlow</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+
+    <a href="users.html">Users</a>
+
+    <a href="tasks.html">Tasks</a>
+
+    <a href="#" id="logout">Logout</a>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+
+        <h1>Users Management</h1>
+
+        <button id="addUserBtn">+ Add User</button>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Email</th>
+
+                    <th>Role</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="usersTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<!-- Add User Modal -->
+<div id="userModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Add User</h2>
+        <input type="hidden" id="userId">
+
+        <input type="text" id="full_name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="password" id="password" placeholder="Password">
+
+        <select id="role">
+            <option value="employee">Employee</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        <br><br>
+
+        <button id="saveUser">Save User</button>
+
+        <button id="closeModal">Cancel</button>
+
+    </div>
+
+</div>
+<script src="../js/users.js"></script>
+
+</body>
+
+</html>

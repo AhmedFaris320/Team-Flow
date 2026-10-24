@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tasks</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>TeamFlow</h2>
+
+    <a href="dashboard.html">Dashboard</a>
+
+    <a href="users.html">Users</a>
+
+    <a href="tasks.html">Tasks</a>
+
+    <a href="#" id="logout">Logout</a>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+
+        <h1>Task Management</h1>
+
+        <button id="addTaskBtn">+ Add Task</button>
+
+    </div>
+
+    <div class="table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Title</th>
+
+                    <th>Assigned To</th>
+
+                    <th>Priority</th>
+
+                    <th>Deadline</th>
+
+                    <th>Status</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tasksTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- Task Modal -->
+
+<div id="taskModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Add Task</h2>
+
+        <input type="hidden" id="taskId">
+
+        <input type="text" id="title" placeholder="Task Title">
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <select id="assigned_to">
+
+        </select>
+
+        <input type="date" id="deadline">
+
+        <select id="priority">
+
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+
+        </select>
+        <label>Status</label>
+
+        <select id="status">
+
+            <option value="Pending">Pending</option>
+
+            <option value="In Progress">In Progress</option>
+
+            <option value="Completed">Completed</option>
+
+        </select>
+        <button id="saveTask">Save Task</button>
+
+        <button id="closeTaskModal">Cancel</button>
+
+    </div>
+
+</div>
+<div id="statusModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2>Update Task Status</h2>
+
+        <input type="hidden" id="statusTaskId">
+
+        <label>Status</label>
+
+        <select id="newStatus">
+
+            <option value="Pending">Pending</option>
+
+            <option value="In Progress">In Progress</option>
+
+            <option value="Completed">Completed</option>
+
+        </select>
+
+        <br><br>
+
+        <button id="saveStatus">Update Status</button>
+
+        <button id="closeStatusModal">Cancel</button>
+
+    </div>
+
+</div>
+<script src="../js/tasks.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>TeamFlow</h2>
+
+    <a href="#">Dashboard</a>
+
+    <a href="users.html">Users</a>
+
+    <a href="tasks.html">Tasks</a>
+
+    <a href="#" id="logout">Logout</a>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1 id="welcome"></h1>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <h1 id="totalUsers">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <h1 id="totalTasks">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending</h3>
+            <h1 id="pendingTasks">0</h1>
+        </div>
+
+        <div class="card">
+            <h3>Completed</h3>
+            <h1 id="completedTasks">0</h1>
+        </div>
+
+    </div>
+
+    <div class="table-container">
+
+        <h2>Recent Tasks</h2>
+
+        <br>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Assigned To</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="taskTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
